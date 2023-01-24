@@ -1,31 +1,42 @@
-# why this code changes the started to True after putting the same command?
+numbers = [5,2,5,2,2]
 
-started = False
-command = ""
-while command != "quit":
-    command = input("> ").lower()
-    if command == "start":
-        if started:
-            print("car started already")
-        else:
-            started = True
-            print("car started")
-    elif command == "stop":
-        if not started:
-            print("car stopped already")
-        else:
-            started = False
-            print("car stopped.")
-    elif command == "help":
-        print('''
-        Start - To start the car
-        stop - to stop the car 
-        quit - to quit
-        ''')
-    elif command == "quit":
-        break
-    else:
-        print("sorry I don't understand that")
+# for x_count in numbers:
+#     output = ''
+#     for count in range(x_count):
+#         output += 'x'
+#     print(output)
+
+for x_count in numbers: 
+    print('x' * x_count)
+
+# # why this code changes the started to True after putting the same command?
+
+# started = False
+# command = ""
+# while command != "quit":
+#     command = input("> ").lower()
+#     if command == "start":
+#         if started:
+#             print("car started already")
+#         else:
+#             started = True
+#             print("car started")
+#     elif command == "stop":
+#         if not started:
+#             print("car stopped already")
+#         else:
+#             started = False
+#             print("car stopped.")
+#     elif command == "help":
+#         print('''
+#         Start - To start the car
+#         stop - to stop the car 
+#         quit - to quit
+#         ''')
+#     elif command == "quit":
+#         break
+#     else:
+#         print("sorry I don't understand that")
 
 
 # it was made by chatgpt
